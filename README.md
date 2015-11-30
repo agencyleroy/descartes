@@ -1,7 +1,8 @@
 # Descartes
 
-"A state is better governed which has few laws, and those laws strictly observed."
-Rene Descartes
+*"A state is better governed which has few laws, and those laws strictly observed."*
+
+*– Rene Descartes*
 
 ## Getting started
 
