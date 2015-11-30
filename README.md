@@ -19,6 +19,14 @@ ReactDOM.render(
 );
 ```
 
+## Exposed methods
+
+`ShoppingCart.addItem(product_id, quantity)` adds a product to the cart
+
+`ShoppingCart.emptyCart()`eEmpties the cart
+
+`ShoppingCart.refreshCart()` fetches and refreshes the cart
+
 ## API expectations
 
 ```
