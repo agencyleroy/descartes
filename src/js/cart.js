@@ -87,9 +87,9 @@ var Cart = React.createClass({
   // Fetch the cart items with ajax and store the result in local storage
   refreshCart: function(){
     var self = this;
-    if (localStorage.nuotisto_cart_items && localStorage.nuotisto_cart_items.length) {
+    if (localStorage.descartes_cart_items && localStorage.descartes_cart_items.length) {
       self.setState({
-        items: JSON.parse(localStorage.getItem('nuotisto_cart_items') || '[]')
+        items: JSON.parse(localStorage.getItem('descartes_cart_items') || '[]')
       });
     } else {
       $.get(ReactDOM.CART_PATH, function(result) {
@@ -107,7 +107,7 @@ var Cart = React.createClass({
 
   // Local storage proxy
   persistItemsToLocalStorage: function() {
-    localStorage.setItem('nuotisto_cart_items', JSON.stringify(this.state.items))
+    localStorage.setItem('descartes_cart_items', JSON.stringify(this.state.items))
   },
 
   // Empties the cart and stores results in local storage
@@ -232,7 +232,7 @@ var CartItem = React.createClass({
             self.props.removeItem(self.props.item.id)
           }
           // Persist the change to localStorage too
-          localStorage.setItem('nuotisto_cart_items', JSON.stringify(result.cart.cart_items))
+          localStorage.setItem('descartes_cart_items', JSON.stringify(result.cart.cart_items))
 
           // Refresh cart page
           //
