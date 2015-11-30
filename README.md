@@ -21,11 +21,11 @@ ReactDOM.render(
 
 ## Exposed methods
 
-`ShoppingCart.addItem(product_id, quantity)` adds a product to the cart
+`Descartes.addItem(product_id, quantity)` adds a product to the cart
 
-`ShoppingCart.emptyCart()`empties the cart
+`Descartes.emptyCart()`empties the cart
 
-`ShoppingCart.refreshCart()` fetches and refreshes the cart
+`Descartes.refreshCart()` fetches and refreshes the cart
 
 ## API expectations
 

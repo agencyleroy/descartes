@@ -67,7 +67,7 @@ var Cart = React.createClass({
     var self = this;
     ReactDOM.CART_PATH = this.props.cartPath
     self.refreshCart();
-    window.ShoppingCart = self;
+    window.Descartes = self;
   },
 
   // Hide the minicart after a duration
